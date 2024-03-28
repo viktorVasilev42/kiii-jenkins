@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     // right parameter is jenkins credentials
-                   docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+                   docker.withRegistry('https://registry.hub.docker.com', 'vv-dockerhub') {
                        app.push("latest")  
                    }
                 }
